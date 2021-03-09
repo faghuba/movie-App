@@ -32,8 +32,70 @@ header {
 .search ::placeholder {
     color: #7378c5;
 }
-/* remove color after click the search box  */
+
 .search:focus {
     outline: none;
     background-color: var(--primary-color);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie{
+    background-color: var(--secondary-color);
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie-info {
+    align-items: center;
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 1rem 1rem;
+}
+
+.movie-info h3{
+    margin-top: 0;
+}
+
+.movie-info span {
+    background-color: var(--primary-color);
+    padding: .25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green {
+    color: lightgreen;
+}
+
+.movie-info span.red {
+    color: red;
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.overview {
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
 }
